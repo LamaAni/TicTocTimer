@@ -20,7 +20,7 @@ jobs:
           pip install setuptools wheel twine
       - name: Prepare version
         run: |
-          echo "$TIC_TOC_TIMER_VERSION" >> pacakge_version.py || exit $?
+          echo "$TIC_TOC_TIMER_VERSION" >> package_version.py || exit $?
           ls
         env:
           TIC_TOC_TIMER_VERSION: ${{ env.GITHUB_REF }}
