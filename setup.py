@@ -18,6 +18,9 @@ import re
 from setuptools import setup
 
 here = os.path.abspath(os.path.dirname(__file__))
+version = os.environ.get("TIC_TOC_TIMER_VERSION", "0.1.0")
+
+print(f"Releasing {version}")
 
 setup(
     name="TicTocTimer",
