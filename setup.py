@@ -28,7 +28,7 @@ setup(
     author="Zav Shotan",
     author_email="",
     url="https://github.com/LamaAni/TicTocTimer",
-    packages=["TicTocTimer"],
+    packages=["tic_toc_timer"],
     platforms="any",
     license="LICENSE",
     install_requires=[],

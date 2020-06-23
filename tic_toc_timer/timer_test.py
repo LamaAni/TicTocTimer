@@ -1,6 +1,6 @@
 import pytest
 from time import sleep
-from TicTocTimer.timer import tic, toc
+from tic_toc_timer import tic, toc
 
 
 def test_global_timer():
