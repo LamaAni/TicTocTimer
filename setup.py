@@ -23,7 +23,7 @@ setup(
     name="TicTocTimer",
     version="0.1.0",
     description="A timer object for python, with similar syntax to matlab's tic toc",
-    long_description="Please see readme.md",
+    long_description="Git repo @ https://github.com/LamaAni/TicTocTimer \n Please see readme.md @ https://github.com/LamaAni/TicTocTimer/blob/master/README.md",
     classifiers=[],
     author="Zav Shotan",
     author_email="",

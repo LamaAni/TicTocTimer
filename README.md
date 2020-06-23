@@ -2,6 +2,8 @@
 
 A very simple and easy to use implementation of timer object for python code, based on the tic/toc matlab syntax.
 
+You can also find it on PyPi @ [https://pypi.org/project/TicTocTimer](https://pypi.org/project/TicTocTimer/)
+
 ## Using the common timer
 
 Using the `global` name label,
@@ -47,7 +49,13 @@ first_elapsed = timer.toc("first")  # expected ~ 11 secs
 second_elapsed = timer.toc("second")  # expected ~ 1 sec
 ```
 
-# Install (for now, directly from the git repo)
+# Install
+
+```shell
+pip install TicTocTimer
+```
+
+## From the git repo directly
 
 To install from master branch,
 
