@@ -18,13 +18,22 @@ import re
 from setuptools import setup
 
 here = os.path.abspath(os.path.dirname(__file__))
-version = os.environ.get("TIC_TOC_TIMER_VERSION", "0.1.0")
 
-print(f"Releasing {version}")
+
+def get_version():
+    version_file_path = os.path.join(here, "pacakge_version.txt")
+    if not os.path.isfile(version_file_path):
+        return "debug"
+    version = None
+    with open(version_file_path, "r") as raw:
+        version = raw.read()
+
+    return version
+
 
 setup(
     name="TicTocTimer",
-    version="0.1.2",
+    version=get_version(),
     description="A timer object for python, with similar syntax to matlab's tic toc",
     long_description="Git repo @ https://github.com/LamaAni/TicTocTimer \n Please see readme.md @ https://github.com/LamaAni/TicTocTimer/blob/master/README.md",
     classifiers=[],
