@@ -23,8 +23,8 @@ jobs:
           pip install setuptools wheel twine
       - name: Prepare version
         run: |
-          echo "Version number: $GITHUB_BRANCH"
-          echo "$GITHUB_BRANCH" > package_version.txt || exit $?
+          echo "Version number: ${GITHUB_REF##*/}"
+          echo "${GITHUB_REF##*/}" > package_version.txt || exit $?
           ls
         env:
           GITHUB_BRANCH: ${{ github.ref }}
